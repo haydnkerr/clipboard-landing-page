@@ -1,0 +1,242 @@
+/* universal styling */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    font-family: "Bai Jamjuree";
+    font-size: 1.1rem;
+    text-align: center;
+    background-image: url("./images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.top {
+    padding-top: 150px;
+    margin: auto;
+}
+
+article {
+    padding: 20px;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.companies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.companies img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 75px;
+}
+
+footer {
+    background-color: hsl(0, 0%, 93%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Text Styling */
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: hsl(210, 10%, 33%);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: hsl(210, 10%, 33%);
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    color: hsl(210, 10%, 33%);
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: hsl(201, 11%, 66%);
+}
+
+a {
+    line-height: 50px;
+    font-size: 1.3rem;
+    color: hsl(210, 10%, 33%);
+}
+
+a:hover {
+    cursor: pointer;
+    font-weight: 600;;
+}
+
+/* image styling */
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.device {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.graphic {
+    margin-bottom: 50px;
+}
+
+.icons img {
+    width: 40px;
+    height: auto;
+    padding: 5px;
+    margin: 50px 15px 50px 15px;
+}
+
+.icons img:hover {
+    cursor: pointer;
+    padding: 0;
+}
+
+.footer-logo {
+    width: 75px;
+    height: auto;
+    margin: 50px 0px 50px 0px;
+}
+
+/* Button Styling */
+
+.btn {
+    display: flex;
+    color: white;
+    border-radius: 50px;
+    width: 350px;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0px 10px 25px 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.ios {
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 3px solid hsl(171, 67%, 36%);
+}
+
+.ios:hover {
+    background-color: hsl(171, 67%, 36%);
+}
+
+.mac {
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 3px solid hsl(233, 51%, 53%);
+}
+
+.mac:hover {
+    background-color: hsl(233, 51%, 53%);
+}
+
+
+@media (min-width: 750px) {
+    body {
+        background-image: url("./images/bg-header-desktop.png");
+    }
+
+    .top {
+        width: 750px;
+    }
+
+    .download {
+        flex-direction: row;
+    }
+
+    .computer {
+        display: flex;
+        text-align: left;
+        justify-content: left;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .computer-info {
+        width: 30%;
+    }
+
+
+    .computer-img {
+        width: 50%;
+        padding-right: 50px;
+    }
+
+    .ipad {
+        width: 750px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .features-container {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .features {
+        width: 30%;
+    }
+
+    .companies {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+}
